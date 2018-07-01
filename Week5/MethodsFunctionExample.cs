@@ -49,6 +49,12 @@ namespace Week5FunctionsExample
             return newChoice;
         }
 
+        //This function adds two values and returns the addition
+        static int Add(int a, int b) {
+            int result = a + b;
+            return result;
+        }
+
 
         //This is where the program actually starts at
         static void Main(string[] args)
@@ -86,10 +92,19 @@ namespace Week5FunctionsExample
 
             Console.WriteLine( "Your first pokemon is " + pokemon[0] + "!" );
 
+            Console.WriteLine("...");
+
+            Console.WriteLine("Enter a number value");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter another number value");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            //We write whatever it is the function call returns
+            //The function call passes to integers to the function
+            Console.WriteLine(Add(a,b));
+
+
             Console.ReadKey();
-
-
-
 
         }
     }
